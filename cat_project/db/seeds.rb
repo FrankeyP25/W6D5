@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ActiveRecord::Base.transaction do
 
-    Cat.destroy_allCat.create!(birth_date: '2015/01/20', color: 'Orange', name: 'Frank', sex: 'F', description: 'Cute cat from upper Manhattan')
+    Cat.destroy_all
 
-    cat1 = 
+    cat1 = Cat.create!(birth_date: '2015/01/20', color: 'Orange', name: 'Frank', sex: 'F', description: 'Cute cat from upper Manhattan')
     cat2 = Cat.create!(birth_date: '1996/10/25', color: 'Black', name: 'Marco', sex: 'F', description: 'Cute cat from Queens')
     cat3 = Cat.create!(birth_date: '1850/08/07', color: 'White', name: 'Eleanor', sex: 'F', description: 'Oldest can in the world')
 end
